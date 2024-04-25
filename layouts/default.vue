@@ -21,7 +21,4 @@ export default{
 </script>
 
 <style lang="scss" scoped>
-body{
-    background-color: black;
-}
 </style>

@@ -69,9 +69,10 @@
    
   }  
   .bas{
-    position: absolute; bottom:0;
-    width: 100vw;
-    max-height: 10px;
+    bottom:0; 
+    width:100%; 
+    padding-top:50px; 
+    height:50px;
   }
   .about-company{
     i{font-size: 25px;}

@@ -1,7 +1,7 @@
 <template>
   <div class="animationCard maxTaille">
     <!-- ce code sert a afficher une card avec images texte et l input de fichier  -->
-    <div class=" d-flex align-items-start grid gap-5 mt-5">
+    <div class=" d-flex align-items-start grid gap-5 ">
       <div class="card mb-3 " style="max-width: 540px">
         <div class="row g-0">
           <div class="col-md-4">
@@ -64,6 +64,7 @@ export default {
 
 }   
 .maxTaille{
-    height: 10px;
+    /*height: 8px;*/
+    margin-top:50px;
 }
 </style>

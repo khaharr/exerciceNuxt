@@ -1,5 +1,4 @@
 <template>
-
     <div >
   <form class="px-4 py-3 ">
     <div class="mb-3">
@@ -9,6 +8,10 @@
     <div class="mb-3">
       <label for="exampleDropdownFormPassword1" class="form-label">Mot de passe</label>
       <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Mot de passe">
+    </div>
+    <div class="mb-3">
+      <label for="exampleDropdownFormPassword1" class="form-label">clé d'activation</label>
+      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="clé">
     </div>
     <div class="mb-3">
       <div class="form-check">
