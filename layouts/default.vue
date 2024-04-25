@@ -1,0 +1,27 @@
+<!-- affiche la page avec les differents composant -->
+<template>
+    <div>
+        <AppHeader/>
+        <NuxtPage/>
+        <AppFooter/>
+    </div>
+</template>
+
+<script >
+import AppHeader from '../components/inc/AppHeader.vue';
+import AppFooter from '../components/inc/AppFooter.vue';
+
+export default{
+    name: 'default',
+    components:{
+        AppHeader,
+        AppFooter,
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+body{
+    background-color: black;
+}
+</style>
