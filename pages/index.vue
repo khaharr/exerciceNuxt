@@ -1,11 +1,10 @@
 <template>
-    <div class="d-flex large px-5 cool">  
-        <div class="row row-cols-1 row-cols-md-auto">
-            <div class="col justify-content-evenly">
+    <!-- <div class="d-flex large px-5 cool">   -->
+        <div class="d-flex  justify-content-between flex-wrap  cool">
+ 
     <cardFichier v-for="elt in elts" :id="elt.id" :name="elt.name" :titre="elt.titre"/>
 </div>
-</div> 
-</div>
+<!-- </div> -->
 </template>
 
 
