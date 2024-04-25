@@ -70,8 +70,7 @@
   }  
   .bas{
     bottom:0; 
-    width:100%; 
-    padding-top:50px; 
+    width:100%;  
     height:50px;
   }
   .about-company{
