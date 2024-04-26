@@ -1,15 +1,9 @@
 <template>
     <div>
-       <listeTableau></listeTableau>
+      <listeTableau :eltss="eltss" />
     </div>
-</template>
-
-<script >
-export default{
-    name: "tableau",
-}
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+  </template>
+  
+  <script setup>
+  const eltss = await $fetch("/api/logs");
+  </script>

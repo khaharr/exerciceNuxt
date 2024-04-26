@@ -1,46 +1,39 @@
 <template>
     <div>
-        <table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">logs</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">nom</th>
+            <th scope="col">name</th>
+            <th scope="col">email</th>
+          </tr>
+        </thead>
         <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-    
-  </tbody>
-</table>
+          <tr v-for="(element, index) in eltss" :key="element.id">
+            <th scope="row">{{ index + 1 }}</th>
+            <td>{{ element.username }}</td>
+            <td> {{ element.name }}</td>
+            <td>{{ element.email }}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-</template>
-
-<script>
-
-export default{
-    name: "listeTableau",
+  </template>
   
-}
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+  <script>
+  
+  export default {
+    name: "listeTableau",
+    props: {
+      eltss: {
+        type: Array,
+        required: true,
+      },
+    },
+  };
+  </script>
+  
+  <style lang="scss" scoped>
+  
+  </style>
