@@ -12,6 +12,7 @@
       />
     </div>
   </div>
+  
 </template>
 <script setup>
 const elts = await $fetch("/api/info");
