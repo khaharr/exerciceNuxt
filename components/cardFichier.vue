@@ -2,7 +2,7 @@
   <div class="animationCard maxTaille">
     <!-- ce code sert a afficher une card avec images texte et l input de fichier -->
     <div class="d-flex align-items-start grid gap-5">
-      <div class="card" style="max-width: 540px">
+      <div class="card" style="">
         <div class="row g-0">
           <div class="col-md-4"><img :src="image" class="img-fluid rounded-start" alt="..." /></div>
           <div class="col-md-8">
@@ -29,9 +29,7 @@
             aria-describedby="inputGroupFileAddon04"
             aria-label="Upload"
           />
-          <button class="btn btn-outline-secondary" @click="myTest" type="button" id="inputGroupFileAddon04">
-            Valider
-          </button>
+          <BoutonValider></BoutonValider>
         </div>
       </div>
     </div>
@@ -39,6 +37,8 @@
 </template>
 
 <script>
+import BoutonValider from './boutonValider.vue';
+
 export default {
   name: "cardFichier",
   props: ["id", "title", "price", "description", "category", "image", "name"],
@@ -58,6 +58,9 @@ export default {
 .animationCard:hover {
   transform: translateY(-10px);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.35);
+}
+.card{
+  max-width: 540px
 }
 .maxTaille {
   margin-top: 50px;

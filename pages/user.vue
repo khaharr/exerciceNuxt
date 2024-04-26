@@ -21,7 +21,7 @@
         </label>
       </div>
     </div>
-    <button type="submit" class="btn btn-primary">Sign in</button>
+    <BoutonValider></BoutonValider>
   </form>
   <div class="dropdown-divider"></div>
   <a class="dropdown-item" href="#">New around here? Sign up</a>
@@ -29,10 +29,10 @@
 </div>
 </template>
 
+
 <script>
 export default{
     name : "user",
-
 }
 </script>
 
