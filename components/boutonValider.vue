@@ -8,7 +8,12 @@
 
 <script>
 export default {
-    name: "boutonValider"
+    name: "boutonValider",
+    methods: {
+    myTest() {
+      alert("valide avec succés");
+    },
+  },
 }
 
 </script>

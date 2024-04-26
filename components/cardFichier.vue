@@ -42,11 +42,6 @@ import BoutonValider from './boutonValider.vue';
 export default {
   name: "cardFichier",
   props: ["id", "title", "price", "description", "category", "image", "name"],
-  methods: {
-    myTest() {
-      alert("valide avec succés");
-    },
-  },
 };
 </script>
 
