@@ -1,5 +1,6 @@
 <template>
     <div>
+  
       <table class="table table-hover">
         <thead>
           <tr>
@@ -10,28 +11,22 @@
           </tr>
         </thead>
         <tbody>
+       
           <tr v-for="(element, index) in eltss" :key="element.id">
-            <th scope="row">{{ index + 1 }}</th>
+            <th >{{ index + 1 }}</th>
             <td>{{ element.username }}</td>
-            <td> {{ element.name }}</td>
+            <td> {{ element.name.firstname }}  {{ element.name.lastname }}  </td>
             <td>{{ element.email }}</td>
-          </tr>
+          </tr> 
         </tbody>
       </table>
     </div>
   </template>
   
-  <script>
-  
-  export default {
-    name: "listeTableau",
-    props: {
-      eltss: {
-        type: Array,
-        required: true,
-      },
-    },
-  };
+  <script setup>
+
+defineProps(['eltss'])
+
   </script>
   
   <style lang="scss" scoped>

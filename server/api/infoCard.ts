@@ -1,79 +1,17 @@
-export default defineEventHandler(() => {
-    const obj =[
-        {name: 'lal' ,
-         id : '1',
-         titre :'LOGIN'
-        },
+
+type nomObj= { 
+   id:number | string ,
+  nom? : string ,
+  prenom : string
+} 
+
+const a:nomObj = { id: 23 , nom :'ghg', prenom : 'tyttytt'}
+const bb:[string, number, string]= ['1',2,'3']
+bb.push('yr')
+
+a.id=15
+
+const y = 12
+a.nom = y.toString()
 
 
-        {name: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quo. Tempore, eum cupiditate? Eos fugit voluptates culpa veniam consequatur, illum eum modi porro deserunt aliquam expedita corrupti voluptas provident cumque.' ,
-         id : '25',
-         titre: 'ENVOI'
-
-        },
-        
-         {name:   'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quo. Tempore, eum cupiditate? Eos fugit voluptates culpa veniam consequatur,'   ,
-          id : '2',
-          titre : 'RECUPERER' 
-        },
-        {name:   'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quo. Tempore, eum cupiditate? Eos fugit voluptates culpa veniam consequatur,'   ,
-        id : '2',
-        titre : 'RECUPERER' 
-      },
-       
-      {name:   'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quo. Tempore, eum cupiditate? Eos fugit voluptates culpa veniam consequatur,'   ,
-      id : '2',
-      titre : 'RECUPERER' 
-    },
-     
-    {name:   'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quo. Tempore, eum cupiditate? Eos fugit voluptates culpa veniam consequatur,'   ,
-    id : '2',
-    titre : 'RECUPERER' 
-  },
-  {name:   'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quo. Tempore, eum cupiditate? Eos fugit voluptates culpa veniam consequatur,'   ,
-  id : '2',
-  titre : 'RECUPERER' 
-},
-{name:   'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quo. Tempore, eum cupiditate? Eos fugit voluptates culpa veniam consequatur,'   ,
-id : '2',
-titre : 'RECUPERER' 
-},
-{name:   'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quo. Tempore, eum cupiditate? Eos fugit voluptates culpa veniam consequatur,'   ,
-    id : '2',
-    titre : 'RECUPERER' 
-  },
-  {name:   'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quo. Tempore, eum cupiditate? Eos fugit voluptates culpa veniam consequatur,'   ,
-  id : '2',
-  titre : 'RECUPERER' 
-},
-{name:   'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quo. Tempore, eum cupiditate? Eos fugit voluptates culpa veniam consequatur,'   ,
-id : '2',
-titre : 'RECUPERER' 
-},
-{name:   'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quo. Tempore, eum cupiditate? Eos fugit voluptates culpa veniam consequatur,'   ,
-    id : '2',
-    titre : 'RECUPERER' 
-  },
-  {name:   'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quo. Tempore, eum cupiditate? Eos fugit voluptates culpa veniam consequatur,'   ,
-  id : '2',
-  titre : 'RECUPERER' 
-},
-{name:   'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quo. Tempore, eum cupiditate? Eos fugit voluptates culpa veniam consequatur,'   ,
-id : '2',
-titre : 'RECUPERER' 
-},
-{name:   'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quo. Tempore, eum cupiditate? Eos fugit voluptates culpa veniam consequatur,'   ,
-    id : '2',
-    titre : 'RECUPERER' 
-  },
-  {name:   'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quo. Tempore, eum cupiditate? Eos fugit voluptates culpa veniam consequatur,'   ,
-  id : '2',
-  titre : 'RECUPERER' 
-},
-
- 
-         
-        
-] 
-    return obj 
-})

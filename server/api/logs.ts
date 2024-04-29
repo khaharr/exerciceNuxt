@@ -1,10 +1,10 @@
 export default defineEventHandler(() => {
-    const obj =[
+    const obj = [
     {
-        "id": 1,
-        "username": "Bret",
-        "name": "Leanne Graham",
-        "email": "Sincere@april.biz",
+        id: 1,
+        username: "Bret",
+        name: "Leanne Graham",
+        email: "Sincere@april.biz",
         
     },
     {
@@ -89,5 +89,6 @@ export default defineEventHandler(() => {
         
     },
 ] 
+
 return obj 
 })
